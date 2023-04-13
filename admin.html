@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="left-content">
+        <img src="img/Logo.svg" alt="">
+        <h2>Admin</h2>
+      </div>
+
+
+      <ul class="dashboard__list">
+        <li id="dashboard__product">
+          <ion-icon name="apps-outline"></ion-icon>
+          Products
+        </li>
+        <li id="dashboard__blogs">
+          <ion-icon name="color-palette-outline"></ion-icon>
+          Blogs
+        </li>
+        <li>
+          <ion-icon name="settings-outline"></ion-icon>
+          Settings
+        </li>
+        <li>
+          <ion-icon name="checkbox-outline"></ion-icon>
+          Orders
+        </li>
+        <li>
+          <ion-icon name="bookmarks-outline"></ion-icon>
+          Bookmark
+        </li>
+        <li>
+          <ion-icon name="chatbubbles-outline"></ion-icon>
+          Messages
+        </li>
+      </ul>
+
+
+      <div class="logout">
+        <img src="img/logOut.svg" alt="">
+        <p>Logout</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="right-header">
+        <h1>Overview</h1>
+        <!-- <input type="file" id="addFile" multiple > -->
+        <div class="right-header-buttons">
+          <button class="btn dots"><span></span><span></span><span></span></button>
+          <button class="btn add-btn" id="addBtn">Add</button>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="books__list" id="booksList">
+          
+          <!-- <div class="book__item">
+            <div class="book__img">
+              <img src="img/book-img.png" alt="">
+            </div>
+            <div class="book__desc">
+              <h4>The Big Book of Dashboards: </h4>
+              <p class="book__author">by <span>Steve Wexler</span> , Jeffrey Shaffer, et al. | Apr 24, 2017</p>
+              <div class="book__rating">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+              </div>
+              <div class="cost">
+                <p><span>Cost:</span> $24.49</p>
+              </div>
+            </div>
+            <div class="edit__delete-btns">
+              <button class="btn edit-btn">edit</button>
+              <button class="btn delete-btn">delete</button>
+            </div>
+          </div>
+          <div class="book__item">
+            <div class="book__img">
+              <img src="img/book-img.png" alt="">
+            </div>
+            <div class="book__desc">
+              <h4>The Big Book of Dashboards: Visualizing Your Data Using Real-World Business Scenarios</h4>
+              <p class="book__author">by <span>Steve Wexler</span> , Jeffrey Shaffer, et al. | Apr 24, 2017</p>
+              <div class="book__rating">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+              </div>
+              <div class="cost">
+                <p><span>Cost:</span> $24.49</p>
+              </div>
+            </div>
+            <div class="edit__delete-btns">
+              <button class="btn edit-btn">edit</button>
+              <button class="btn delete-btn">delete</button>
+            </div>
+          </div> -->
+          
+        </div>
+        <ul id="pagesLists">
+          <!-- <li class="page__list">
+            <button class="page-btn">1</button>
+          </li>
+          <li class="page__list">
+            <button class="page-btn">2</button>
+          </li>
+          <li class="page__list">
+            <button class="page-btn">3</button>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="modal">
+    <div class="modal__content" id="modalContent">
+      <form id="modalForm">
+        <input type="text" placeholder="Book Title" id="title">
+        <input type="text" placeholder="Author" id="author">
+        <select name="" id="category">
+          <option value="" selected hidden>Category</option>
+          <option value="new">New Products</option>
+          <option value="onsale">Onsale</option>
+          <option value="upcome">Upcoming Products</option>
+        </select>
+        <input type="text" placeholder="Price: $" id="cost">
+        <input type="datetime-local" placeholder="Published Date: 2022-12-02" id="published__date">
+        <input type="text" placeholder="Publisher: Nimadur" id="publisher">
+        <input type="number" min="1" max="5" step="1" placeholder="Rate: 1-5" id="rate">
+        <input type="file" placeholder="Image link" id="img__url">
+        <div id="loaderBnts">
+          <button type="submit" class="btn modal__edit-btn">
+            <span class="button__text">Save</span>
+          </button>
+        </div>
+        <img id="close" src="img/close.png" alt="">
+      </form>
+      <div id="small__img">
+        <img alt="" id="showImageUrl">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== edit modal =============== -->
+  <div class="editModal" id="editModal">
+    <div class="edit-modal__content" id="editModalContent">
+      <form id="editModalForm">
+        <input type="text" placeholder="Book Title" id="editTitle">
+        <input type="text" placeholder="Author" id="editAuthor">
+        <select name="" id="editCategory">
+          <option value="" selected hidden>Category</option>
+          <option value="new">New Products</option>
+          <option value="onsale">Onsale</option>
+          <option value="upcome">Upcoming Products</option>
+        </select>
+        <input type="text" placeholder="Price: $" id="editCost">
+        <input type="datetime-local" placeholder="Published Date: 2022-12-02" id="editPublished__date">
+        <input type="text" placeholder="Publisher: Nimadur" id="editPublisher">
+        <input type="number" min="1" max="5" step="1" placeholder="Rate: 1-5" id="editRate">
+        <input type="file" placeholder="Image link" id="editImg__url">
+        <div id="loaderEditBnts">
+          <button type="submit" class="btn modal__edit-btn">
+            <span class="button__text">Edit</span>
+          </button>
+        </div>
+        <img id="editClose" src="img/close.png" alt="">
+      </form>
+      <div id="editSmall__img">
+        <img alt="" id="editShowImageUrl">
+      </div>
+    </div>
+  </div>
+  <!-- ============== edit modal =============== -->
+
+
+
+  <!-- <div class="editModal" id="editModal">
+    <div class="edit__modal__content" id="editModalContent">
+      <form id="editModalForm">
+        <input type="text" placeholder="Book Title" id="editTitle">
+        <input type="text" placeholder="Author" id="editAuthor">
+        <select name="" id="editCategory">
+          <option value="" selected hidden>Category</option>
+          <option value="roman">Roman</option>
+          <option value="comedy">Drama</option>
+          <option value="comedy">Comedy</option>
+          <option value="comedy">Travel</option>
+          <option value="comedy">Advanture</option>
+          <option value="comedy">Poetic</option>
+          <option value="comedy">Religious</option>
+          <option value="comedy">Business</option>
+          <option value="comedy">Scientific</option>
+          <option value="comedy">Story</option>
+          <option val ue="comedy">Fairy-tale</option>
+        </select>
+        <input type="number" placeholder="Price: so'mda" id="editCost">
+        <input type="datetime-local" placeholder="Published Date: 2022-12-02" id="editPublished__date">
+        <input type="text" placeholder="Publisher: Nimadur" id="editPublisher">
+        <input type="number" min="1" max="5" step="1" placeholder="Rate: 1-5" id="editRate">
+        <input type="file" placeholder="Image link" id="editImg__url">
+        <div id="loaderBnts">
+          <button type="submit" class="btn editmodal__edit-btn">
+            <span class="button__text">Save</span>
+          </button>
+        </div>
+        <img id="close" src="img/close.png" alt="">
+      </form>
+      <div id="small__img">
+        <img alt="" id="showImageUrl">
+      </div>
+    </div>
+  </div> -->
+
+ 
+  <div class="loading"></div>
+  <!-- <input type="file" placeholder="Image link" id="addFile"> -->
+
+ 
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+
+</html>

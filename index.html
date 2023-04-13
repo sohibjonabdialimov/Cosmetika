@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kosmetika</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="top-header">
+    <div class="container">
+      <div class="top-header__content">
+        <div class="top-header__socials">
+          <a href="#">
+            <img src="img/head1.svg" alt="link">
+          </a>
+          <a href="#">
+            <img src="img/head2.svg" alt="link">
+          </a>
+          <a href="#">
+            <img src="img/head3.svg" alt="link">
+          </a>
+          <a href="#">
+            <img src="img/head4.svg" alt="link">
+          </a>
+        </div>
+        <div class="top-header__phone">
+          <img src="img/phone-img.svg" alt="">
+          <p>(+123)4567890</p>
+        </div>
+        <div class="top-header__lang">
+          <p>Setting</p>
+          <p>USD $</p>
+          <p class="top-header__lang_us"><img src="img/us-flag.jpg.png" alt="">English</p>
+        </div>
+        <div class="top-header__login" id="fromUserToAdmin">
+          <ion-icon name="log-in-outline"></ion-icon>
+          <p>login</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="header__content">
+        <div class="header-logo">
+          <img src="img/header-logo.png" alt="">
+        </div>
+        <nav>
+          <div class="nav__ul">
+            <a class="nav__ul-list active">
+              Home
+            </a>
+            <a class="nav__ul-list">
+              Shop
+            </a>
+            <a class="nav__ul-list">
+              Pages
+            </a>
+            <a class="nav__ul-list">
+              Blog
+            </a>
+            <a class="nav__ul-list">
+              Contact Us
+            </a>
+          </div>
+        </nav>
+        <div class="header__socials">
+          <div class="header__socials__content">
+            <img src="img/search.svg" alt="">
+          </div>
+          <div class="header__socials__content">
+            <img src="img/shuffle.svg" alt="">
+            <span id="shuffle">1</span>
+          </div>
+          <div class="header__socials__content">
+            <img src="img/favourite.svg" alt="">
+            <span id="header__favourite">2</span>
+          </div>
+          <div class="header__socials__content" id="replaceCart">
+            <ion-icon name="cart-outline"></ion-icon>
+            <span id="header__cart">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- <section class="hero__section">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__desc">
+          <p>Face Makeup Brush</p>
+          <div class="hero__title">
+            <h2>Skincare Brush Set</h2>
+            <h2>Sale 30% Off</h2>
+          </div>
+          <button>Shop now</button>
+        </div>
+        <div class="hero__img">
+          <img src="img/back3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <div id="hero__section" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero__section" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero__section" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero__section" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active hero__section">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__desc">
+              <p>Face Makeup Brush</p>
+              <div class="hero__title">
+                <h2>Skincare Brush Set</h2>
+                <h2>Sale 30% Off</h2>
+              </div>
+              <button>Shop now</button>
+            </div>
+            <div class="hero__img">
+              <img src="img/back3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item hero__section">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__desc">
+              <p>Face Makeup Brush</p>
+              <div class="hero__title">
+                <h2>Skincare Brush Set</h2>
+                <h2>Sale 30% Off</h2>
+              </div>
+              <button>Shop now</button>
+            </div>
+            <div class="hero__img">
+              <img src="img/back7.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item hero__section">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__desc">
+              <p>Face Makeup Brush</p>
+              <div class="hero__title">
+                <h2>Skincare Brush Set</h2>
+                <h2>Sale 30% Off</h2>
+              </div>
+              <button>Shop now</button>
+            </div>
+            <div class="hero__img">
+              <img src="img/back6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero__section" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero__section" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+
+  <main>
+    <div class="container">
+      <!-- support -->
+      <div class="support">
+        <div class="support__cards">
+          <div class="support__card">
+            <div class="support__img">
+              <img src="img/additional1.png" alt="">
+            </div>
+            <div class="support__text">
+              <h4>Free Shipping</h4>
+              <p>On all orders over $75.00</p>
+            </div>
+          </div>
+          <div class="support__card">
+            <div class="support__img">
+              <img src="img/additional2.png" alt="">
+            </div>
+            <div class="support__text">
+              <h4>Free Shipping</h4>
+              <p>On all orders over $75.00</p>
+            </div>
+          </div>
+          <div class="support__card">
+            <div class="support__img">
+              <img src="img/additional3.png" alt="">
+            </div>
+            <div class="support__text">
+              <h4>Free Shipping</h4>
+              <p>On all orders over $75.00</p>
+            </div>
+          </div>
+          <div class="support__card">
+            <div class="support__img">
+              <img src="img/additional4.png" alt="">
+            </div>
+            <div class="support__text">
+              <h4>Free Shipping</h4>
+              <p>On all orders over $75.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- costemic -->
+      <div class="costemic">
+        <div class="costemic__images">
+          <img src="img/products1.png" alt="">
+          <img src="img/products2.png" alt="">
+          <img src="img/products3.png" alt="">
+        </div>
+      </div>
+      <!-- Products -->
+      <h2 class="section__title">Our products</h2>
+      <p class="section__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, culpa?
+      </p>
+
+      <div class="products__btns">
+        <button id="newProducts" class="btn__active newProduct__btn">new products</button>
+        <button id="onsale" class="newProduct__btn">onsale</button>
+        <button id="soon" class="newProduct__btn">upcoming products</button>
+      </div>
+
+      <div class="products__cards">
+
+        <!-- <div class="product__card">
+          <img src="img/new1.png" alt="">
+
+          <div class="product__desc">
+            <h4>All Natural Makeup Beauty Cosmetics</h4>
+            <div class="cart__success">
+              <h4 id="product__price">$11.90</h4>
+              <div class="cart__cicrle">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </div>
+              <div class="cart__plus__minus">
+                <button class="cartAddMinus">-</button>
+                <button class="cartAddValue">1</button>
+                <button class="cartAddPlus">+</button>
+              </div>
+            </div>
+          </div>
+          <div id="cart__mark">new</div>
+        </div>
+        <div class="product__card">
+          <img src="img/new2.png" alt="">
+          <div class="product__desc">
+            <h4>On Trend Makeup and Beauty Cosmetics</h4>
+            <div class="cart__success">
+              <h4 id="product__price">$11.90</h4>
+              <div class="cart__cicrle">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div id="cart__mark">new</div>
+        </div>
+        <div class="product__card">
+          <img src="img/new3.png" alt="">
+          <div class="product__desc">
+            <h4>The Cosmetics and Beauty brand Shoppe</h4>
+            <div class="cart__success">
+              <h4 id="product__price">$11.90</h4>
+              <div class="cart__cicrle">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div id="cart__mark">new</div>
+        </div>
+        <div class="product__card">
+          <img src="img/new4.png" alt="">
+          <div class="product__desc">
+            <h4>orginal Age Defying Cosmetics Makeup</h4>
+            <div class="cart__success">
+              <h4 id="product__price">$11.90</h4>
+              <div class="cart__cicrle">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div id="cart__mark">new</div>
+        </div> -->
+
+      </div>
+      <div class="product__pagination">
+        <ul id="pagesLists"></ul>
+      </div>
+
+      <div class="advertisement">
+        <div class="advertisement__images">
+          <img src="img/arrival1.png" alt="">
+          <img src="img/arrival2.png" alt="">
+          <img src="img/arrival3.png" alt="">
+        </div>
+      </div>
+
+      <h2 class="section__title">New Arrival products</h2>
+      <p class="section__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, repellat.
+      </p>
+
+      <div class="products__cards">
+        <div class="product__card">
+          <img src="img/brand1.png" alt="">
+
+          <div class="product__desc">
+            <h4>All Natural Makeup Beauty Cosmetics</h4>
+            <div class="cart__success">
+              <h4 id="product__price">$11.90</h4>
+              <div class="cart__cicrle">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div id="cart__mark">new</div>
+        </div>
+        <div class="product__card">
+          <img src="img/brand2.png" alt="">
+          <div class="product__desc">
+            <h4>On Trend Makeup and Beauty Cosmetics</h4>
+            <div class="cart__success">
+              <h4 id="product__price">$11.90</h4>
+              <div class="cart__cicrle">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div id="cart__mark">new</div>
+        </div>
+        <div class="product__card">
+          <img src="img/brand3.png" alt="">
+          <div class="product__desc">
+            <h4>The Cosmetics and Beauty brand Shoppe</h4>
+            <div class="cart__success">
+              <h4 id="product__price">$11.90</h4>
+              <div class="cart__cicrle">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div id="cart__mark">new</div>
+        </div>
+        <div class="product__card">
+          <img src="img/brand4.png" alt="">
+          <div class="product__desc">
+            <h4>orginal Age Defying Cosmetics Makeup</h4>
+            <div class="cart__success">
+              <h4 id="product__price">$11.90</h4>
+              <div class="cart__cicrle">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div id="cart__mark">new</div>
+        </div>
+      </div>
+
+
+      <h2 class="section__title">from our Latest Blogs</h2>
+      <p class="section__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      </p>
+
+      <div class="blogs__carts">
+        <!-- <div class="blog__cart">
+          <img src="img/blog1.png" alt="">
+          <div class="blog__desc">
+            <span id="fashion">Fashion</span>
+            <h4>This is first Post For Blog</h4>
+            <p>Posted by <span>HasTech</span> 12TH Nov 2023</p>
+          </div>
+        </div>
+
+        <div class="blog__cart">
+          <img src="img/blog2.png" alt="">
+          <div class="blog__desc">
+            <span id="fashion">Fashion</span>
+            <h4>This is Secound Post For Blog</h4>
+            <p>Posted by <span>HasTech</span> 12TH Nov 2023</p>
+          </div>
+        </div> -->
+
+        <!-- <div class="blog__cart">
+          <img src="img/blog3.png" alt="">
+          <div class="blog__desc">
+            <span id="fashion">Fashion</span>
+            <h4>This is third Post For Blog</h4>
+            <p>Posted by <span>HasTech</span> 12TH Nov 2023</p>
+          </div>
+        </div>
+        <div class="blog__cart">
+          <img src="img/blog4.png" alt="">
+          <div class="blog__desc">
+            <span id="fashion">Fashion</span>
+            <h4>This is fourth Post For Blog</h4>
+            <p>Posted by <span>HasTech</span> 12TH Nov 2023</p>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="product__pagination">
+        <ul id="pagesLists1"></ul>
+      </div>
+
+      <div class="companies">
+        <div class="company__images">
+          <img src="img/company1.png" alt="">
+          <img src="img/company2.png" alt="">
+          <img src="img/company3.png" alt="">
+          <img src="img/company4.png" alt="">
+          <img src="img/company5.png" alt="">
+          <img src="img/company6.png" alt="">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img src="img/footer-logo.png" class="footer__logo__image" alt="">
+          <p>We are a team of professional designers and developers that create high quality wordpress plugins, Html,
+            React Template.</p>
+          <div class="footer__links">
+            <div class="footer__link">
+              <img src="img/link1.png" alt="">
+            </div>
+            <div class="footer__link">
+              <img src="img/link2.png" alt="">
+            </div>
+            <div class="footer__link">
+              <img src="img/link3.png" alt="">
+            </div>
+            <div class="footer__link">
+              <img src="img/link4.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="footer__extra">
+          <div class="footer__info">
+            <div class="footer__title">Information</div>
+            <p>About us</p>
+            <p>payment</p>
+            <p>Contact us</p>
+            <p>Stores</p>
+          </div>
+          <div class="footer__info">
+            <div class="footer__title">social Links</div>
+            <p>New products</p>
+            <p>Best sales</p>
+            <p>Login</p>
+            <p>My account</p>
+          </div>
+          <div class="footer__info">
+            <div class="footer__title">Newsletter</div>
+            <p>Subcribe to the TheFace mailing list to receive update on mnew arrivals, special offers and other
+              discount information.</p>
+            <input type="text" placeholder="Your email address">
+            <button>Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-content">
+        <p>Copyright © <span>HasThemes</span>. All Rights Reserved</p>
+        <img src="img/full-logos.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

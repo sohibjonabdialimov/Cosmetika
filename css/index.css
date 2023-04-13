@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap");
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+.container {
+  width: 1296px;
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  object-fit: cover;
+}
+button{
+  cursor: pointer;
+}
+
+/* top header start */
+.top-header {
+  background-color: #111;
+  height: 60px;
+  line-height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.899);
+}
+.top-header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-header__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 27px;
+}
+.top-header__socials a {
+  margin-top: 4px;
+}
+
+.top-header__socials img {
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.top-header__phone {
+  display: flex;
+  color: #fff;
+  column-gap: 11px;
+  align-items: center;
+  justify-content: center;
+}
+.top-header__phone img{
+  margin-bottom: 20px;
+}
+.top-header__phone p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+.top-header__lang {
+  display: flex;
+  color: #fff;
+  column-gap: 42px;
+  align-items: center;
+  justify-content: center;
+}
+.top-header__lang p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+.top-header__lang_us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.top-header__login {
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.top-header__login ion-icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.carousel-control-prev{
+  background-color: rgb(48, 48, 52);
+  width: 60px;
+  height: 60px;
+  margin-top: 200px;
+  border-radius: 50%;
+}
+
+.carousel-control-next{
+  background-color: rgb(48, 48, 52);
+  width: 60px;
+  height: 60px;
+  margin-top: 200px;
+  border-radius: 50%;
+}
+.carousel-indicators [data-bs-target]{
+  background-color: #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+
+
+
+/*  header start */
+header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #fbfbfb;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  width: 114px;
+  height: 34px;
+}
+.header-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 53px;
+}
+.nav__ul-list {
+  color: #111;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+}
+.nav__ul-list.active {
+  color: #5a5ac9;
+}
+.header__socials {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  column-gap: 45px;
+}
+.header__socials__content {
+  cursor: pointer;
+  position: relative;
+}
+.header__socials__content span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #5a5ac9;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -5px;
+  right: -10px;
+  font-size: 10px;
+}
+.header__socials__content ion-icon {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+/*  header end */
+
+
+
+/*  hero section start */
+#hero__section {
+  background-color: #fbfbfb;
+  height: calc(100vh - 60px - 40px);
+  margin-bottom: 208px;
+}
+.hero__content {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__desc p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+.hero__title {
+  margin-bottom: 55px;
+}
+.hero__title h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.hero__desc button {
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 1px solid #111;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.hero__img img {
+  width: 580px;
+  height: 500px;
+  object-fit: cover;
+}
+/*  hero section end */
+
+/*  support section start */
+.support {
+  background-color: #5a5ac9;
+  color: #fff;
+  margin-bottom: 80px;
+}
+.support__cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 174px;
+}
+.support__card {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+.support__text h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+.support__text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+/*  support section end */
+/*  costemic section start*/
+.costemic {
+  margin-bottom: 80px;
+}
+.costemic__images {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+/* costemic section end */
+
+/* products section start */
+
+.product__pagination{
+  text-align: center;
+  width: 100%;
+  margin: 0px auto 80px auto;
+}
+#pagesLists{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#pagesLists1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.page__list{
+  width: 40px;
+  height: 45px;
+}
+.page-btn, .page-btn1{
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid #000; 
+}
+.page-btn:hover, .page-btn1.hover{
+  background-color: #000;
+  color: #fff;
+}
+.page-btn.page-active{
+  background-color: #000;
+  color: #fff;
+}
+.page-btn1.page-active{
+  background-color: #000;
+  color: #fff;
+}
+
+.section__title {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.section__title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: #5a5ac9;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section__subtitle {
+  text-align: center;
+  text-transform: capitalize;
+  color: #565656;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Poppins";
+  line-height: 24px;
+  margin-bottom: 57px;
+}
+.products__btns {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 33px;
+  margin-bottom: 58px;
+}
+.products__btns button {
+  border: none;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: capitalize;
+}
+.products__btns button.btn__active {
+  text-decoration-line: underline;
+  color: #5a5ac9;
+}
+.newProduct__btn{
+  transition: 0.3s all ease-in-out;
+}
+.products__cards {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+.product__card {
+  background: #ffffff;
+  box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  position: relative;
+}
+.product__card img{
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+}
+.product__desc {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.product__desc h4 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+#cart__mark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: #5a5ac9;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Poppins";
+  text-transform: capitalize;
+}
+.cart__success {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#product__price {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+.cart__cicrle {
+  background: #f6f6f6;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart__cicrle.deleteCardCircle{
+  display: none;
+}
+.cart__cicrle ion-icon {
+  font-size: 24px;
+}
+.cart__plus__minus{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #aaa;
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.cart__plus__minus.addCardPlusMinus{
+  display: flex;
+}
+.cart__plus__minus button{
+  font-size: 20px;
+  border: none;
+  background-color: #fff;
+}
+.cartAddPlus{
+  color: rgb(31, 134, 193);
+}
+.cartAddMinus{
+  color: rgb(243, 66, 66);
+  font-size: 30px;
+}
+/* products section end */
+
+/* advertisement section start */
+.advertisement {
+  margin-bottom: 80px;
+}
+.advertisement__images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+/* advertisement section end */
+
+/* blogs section start */
+.blogs__carts {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+.blog__cart{
+  width: 330px;
+}
+.blog__cart img{
+  width:  280px;
+  height: 280px;
+}
+#fashion {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #5a5ac9;
+  margin-bottom: 9.4px;
+  margin-top: 15px;
+}
+.blog__desc h4 {
+  margin-bottom: 15px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.blog__desc p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #565656;
+}
+.blog__desc p span {
+  color: #5a5ac9;
+}
+/* blogs section end */
+
+/* companies section start */
+
+.companies {
+  border-top: 1px solid #acaaaa62;
+}
+.company__images {
+  padding: 36px 0 35px 0;
+  display: flex;
+  justify-content: space-around;
+}
+/* companies section end */
+
+/* footer start */
+footer {
+  padding-top: 80px;
+  background-color: #efefef;
+  padding-bottom: 95px;
+}
+.footer__links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.footer__link {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__link img {
+  width: 25px;
+  height: 25px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 43px;
+}
+.footer__logo {
+  width: 400px;
+}
+.footer__extra {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+.footer__info:last-child {
+  width: 400px;
+}
+.footer__logo__image {
+  width: 114px;
+  height: 34px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+.footer__logo p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.footer__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  margin-bottom: 45px;
+}
+.footer__title::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: #5a5ac9;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+}
+.footer__info p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #565656;
+  margin-bottom: 5.5px;
+}
+.footer__info:last-child p {
+  margin-bottom: 20px;
+}
+.footer__info:last-child input {
+  padding: 13px 11px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: none;
+  background-color: #fff;
+  outline: none;
+}
+.footer__info:last-child button {
+  padding: 13px 15px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: none;
+  background: #5a5ac9;
+  color: #fff;
+}
+/* footer end */
+
+/* footer bottom start */
+.footer__bottom {
+  background-color: #111;
+  padding: 15px;
+  color: #fff;
+}
+
+.footer__bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottom-content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer__bottom-content p span {
+  color: #5a5ac9;
+}
+/* footer bottom end */

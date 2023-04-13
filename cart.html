@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+  <div class="top-header">
+    <div class="container">
+      <div class="top-header__content">
+        <div class="top-header__socials">
+          <a href="#">
+            <img src="img/head1.svg" alt="link">
+          </a>
+          <a href="#">
+            <img src="img/head2.svg" alt="link">
+          </a>
+          <a href="#">
+            <img src="img/head3.svg" alt="link">
+          </a>
+          <a href="#">
+            <img src="img/head4.svg" alt="link">
+          </a>
+        </div>
+        <div class="top-header__phone">
+          <img src="img/phone-img.svg" alt="">
+          <p>(+123)4567890</p>
+        </div>
+        <div class="top-header__lang">
+          <p>Setting</p>
+          <p>USD $</p>
+          <p class="top-header__lang_us"><img src="img/us-flag.jpg.png" alt="">English</p>
+        </div>
+        <div class="top-header__login" id="fromUserToAdmin">
+          <ion-icon name="log-in-outline"></ion-icon>
+          <p>login</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="container">
+      <div class="header__content">
+        <div class="header-logo">
+          <img src="img/header-logo.png" alt="">
+        </div>
+        <nav>
+          <div class="nav__ul">
+            <a class="nav__ul-list active">
+              Home
+            </a>
+            <a class="nav__ul-list">
+              Shop
+            </a>
+            <a class="nav__ul-list">
+              Pages
+            </a>
+            <a class="nav__ul-list">
+              Blog
+            </a>
+            <a class="nav__ul-list">
+              Contact Us
+            </a>
+          </div>
+        </nav>
+        <div class="header__socials">
+          <div class="header__socials__content">
+            <img src="img/search.svg" alt="">
+          </div>
+          <div class="header__socials__content">
+            <img src="img/shuffle.svg" alt="">
+            <span id="shuffle">1</span>
+          </div>
+          <div class="header__socials__content">
+            <img src="img/favourite.svg" alt="">
+            <span id="header__favourite">2</span>
+          </div>
+          <div class="header__socials__content">
+            <ion-icon name="cart-outline"></ion-icon>
+            <span id="header__cart">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="hero__section">
+    <div class="container">
+      <div class="hero__content">
+        <h1>cart</h1>
+        <div class="cart__full__links">
+          <div class="cart__link">
+            <a href="#" id="replaceHome">Home <ion-icon name="chevron-forward-outline"></ion-icon></a>
+          </div>
+          <div class="cart__link">
+            <a href="#" class="link__active">cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+      <div class="main__content">
+        <h2>Your cart items</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Product Image</th>
+              <th>Product Name</th>
+              <th>Stock Status</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>action</th>
+              <th>Checkout</th>
+            </tr>
+          </thead>
+          <tbody>
+<!-- 
+            <tr>
+              <td class="big__image">
+                <img class="table__big__image" src="img/main1.svg" alt="">
+              </td>
+              <td class="table__title">Water and Wind Resistant cream</td>
+              <td class="table__stock"><span>In Stock</span></td>
+              <td class="table__input">
+                <input type="number" name="" id="" value="1">
+              </td>
+              <td class="table__price">$38.24</td>
+              <td class="small__img">
+                <img class="table__small__image" src="img/main-delete.svg" alt="">
+              </td>
+              <td class="button__table">
+                <button>Add to cart</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="table__big__image" src="img/main1.svg" alt="">
+              </td>
+              <td class="table__title">Water and Wind Resistant cream</td>
+              <td class="table__stock"><span>In Stock</span></td>
+              <td>
+                <input type="number" name="" id="" value="1">
+              </td>
+              <td class="table__price">$38.24</td>
+              <td>
+                <img class="table__small__image" src="img/main-delete.svg" alt="">
+              </td>
+              <td>
+                <button>Add to cart</button>
+              </td>
+            </tr>
+             -->
+          </tbody>
+        </table>
+
+
+        <div class="main__extra">
+          <div class="main__left">
+            <h3>calculate shipping</h3>
+            <div class="selects">
+              <select name="" id="" class="first__select">
+                <option value="" selected hidden>Select country</option>
+                <option value="uz">Uzbekistan</option>
+                <option value="en">England</option>
+                <option value="ru">Russian</option>
+              </select>
+              <select name="" id="" class="second__select">
+                <option value="" selected hidden>Select State</option>
+                <option value="uz">Nimadur 1</option>
+                <option value="en">Nimadur 2</option>
+                <option value="ru">Nimadur 3</option>
+              </select>
+            </div>
+            <div class="zip">
+              <input type="text" placeholder="Postcode / ZIP">
+              <button class="main__btn">estimate</button>
+            </div>
+            <h3>Discount coupon Code</h3>
+            <div class="coupon">
+              <input type="text" placeholder="coupon Code">
+              <button class="main__btn">apply code</button>
+            </div>
+          </div>
+          <div class="main__right">
+            <div class="full__total">
+              <div class="product__total">
+                <p>Product</p>
+                <p>Total</p>
+              </div>
+              <div class="product__shipping">
+                <p>Shipping</p>
+                <span>Free shipping</span>
+              </div>
+              <div class="total">
+                <p>Total</p>
+                <span id="full__total">$329</span>
+              </div>
+            </div>
+            <div class="total__btns">
+              <button class="main__btn">update cart</button>
+              <button class="main__btn">checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img src="img/footer-logo.png" class="footer__logo__image" alt="">
+          <p>We are a team of professional designers and developers that create high quality wordpress plugins, Html,
+            React Template.</p>
+          <div class="footer__links">
+            <div class="footer__link">
+              <img src="img/link1.png" alt="">
+            </div>
+            <div class="footer__link">
+              <img src="img/link2.png" alt="">
+            </div>
+            <div class="footer__link">
+              <img src="img/link3.png" alt="">
+            </div>
+            <div class="footer__link">
+              <img src="img/link4.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="footer__extra">
+          <div class="footer__info">
+            <div class="footer__title">Information</div>
+            <p>About us</p>
+            <p>payment</p>
+            <p>Contact us</p>
+            <p>Stores</p>
+          </div>
+          <div class="footer__info">
+            <div class="footer__title">social Links</div>
+            <p>New products</p>
+            <p>Best sales</p>
+            <p>Login</p>
+            <p>My account</p>
+          </div>
+          <div class="footer__info">
+            <div class="footer__title">Newsletter</div>
+            <p>Subcribe to the TheFace mailing list to receive update on mnew arrivals, special offers and other
+              discount information.</p>
+            <input type="text" placeholder="Your email address">
+            <button>Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-content">
+        <p>Copyright © <span>HasThemes</span>. All Rights Reserved</p>
+        <img src="img/full-logos.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>
