@@ -352,8 +352,4 @@ document.querySelectorAll('.newProduct__btn').forEach(item => {
 
 document.querySelector('#replaceCart').addEventListener('click', () => {
   location.replace('./cart.html');
-  // selectedCartLists.forEach(item => {
-  //   addToCartNumberArr = allBooks.filter(it => it.id == item.id);
-  //   localStorage.setItem('addToCartNumberArr', JSON.stringify(addToCartNumberArr));
-  // })
 });
